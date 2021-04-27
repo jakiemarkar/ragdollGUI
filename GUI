@@ -1,0 +1,582 @@
+-- Instances:
+
+local RagdollGui = Instance.new("ScreenGui")
+local Name = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Frame = Instance.new("Frame")
+local Superpush = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local UICorner_3 = Instance.new("UICorner")
+local Name_2 = Instance.new("TextLabel")
+local Invisiblemap = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local InvisiblePlayer = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local AntiRagdoll = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local WalkSpeedJumpPower = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local RemoveTextures = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local Fly = Instance.new("TextLabel")
+local HideGUI = Instance.new("TextLabel")
+local Rejoin = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local Credits = Instance.new("TextLabel")
+local Spam = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local StopSpam = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+
+--Properties:
+
+RagdollGui.Name = "Ragdoll Gui"
+RagdollGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+RagdollGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+RagdollGui.ResetOnSpawn = false
+
+Name.Name = "Name"
+Name.Parent = RagdollGui
+Name.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+Name.BorderSizePixel = 0
+Name.Position = UDim2.new(0.764976919, 0, 0.417582422, 0)
+Name.Size = UDim2.new(0, 225, 0, 39)
+Name.ZIndex = 0
+
+UICorner.Parent = Name
+
+Frame.Parent = Name
+Frame.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+Frame.Position = UDim2.new(-0.305632412, 0, 0.684458375, 0)
+Frame.Size = UDim2.new(0, 361, 0, 190)
+
+Superpush.Name = "Super push"
+Superpush.Parent = Frame
+Superpush.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Superpush.Position = UDim2.new(0.0608843453, 0, 0.770383179, 0)
+Superpush.Size = UDim2.new(0, 120, 0, 26)
+Superpush.Font = Enum.Font.SourceSans
+Superpush.Text = "Super Push"
+Superpush.TextColor3 = Color3.fromRGB(0, 0, 0)
+Superpush.TextScaled = true
+Superpush.TextSize = 14.000
+Superpush.TextWrapped = true
+
+UICorner_2.Parent = Superpush
+
+UICorner_3.Parent = Frame
+
+Name_2.Name = "Name"
+Name_2.Parent = Frame
+Name_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name_2.BackgroundTransparency = 1.000
+Name_2.Position = UDim2.new(0.188365653, 0, -0.142105281, 0)
+Name_2.Size = UDim2.new(0, 225, 0, 33)
+Name_2.Font = Enum.Font.Oswald
+Name_2.Text = "Jakiemarkar Ragdoll gui"
+Name_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Name_2.TextScaled = true
+Name_2.TextSize = 14.000
+Name_2.TextWrapped = true
+
+Invisiblemap.Name = "Invisible map"
+Invisiblemap.Parent = Frame
+Invisiblemap.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Invisiblemap.Position = UDim2.new(0.628751397, 0, 0.770383179, 0)
+Invisiblemap.Size = UDim2.new(0, 120, 0, 26)
+Invisiblemap.Font = Enum.Font.SourceSans
+Invisiblemap.Text = "Invisible Map"
+Invisiblemap.TextColor3 = Color3.fromRGB(0, 0, 0)
+Invisiblemap.TextScaled = true
+Invisiblemap.TextSize = 14.000
+Invisiblemap.TextWrapped = true
+
+UICorner_4.Parent = Invisiblemap
+
+InvisiblePlayer.Name = "Invisible Player"
+InvisiblePlayer.Parent = Frame
+InvisiblePlayer.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+InvisiblePlayer.Position = UDim2.new(0.628751397, 0, 0.580909491, 0)
+InvisiblePlayer.Size = UDim2.new(0, 120, 0, 26)
+InvisiblePlayer.Font = Enum.Font.SourceSans
+InvisiblePlayer.Text = "Become Invisible"
+InvisiblePlayer.TextColor3 = Color3.fromRGB(0, 0, 0)
+InvisiblePlayer.TextScaled = true
+InvisiblePlayer.TextSize = 14.000
+InvisiblePlayer.TextWrapped = true
+
+UICorner_5.Parent = InvisiblePlayer
+
+AntiRagdoll.Name = "Anti Ragdoll"
+AntiRagdoll.Parent = Frame
+AntiRagdoll.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+AntiRagdoll.Position = UDim2.new(0.0608843565, 0, 0.580909491, 0)
+AntiRagdoll.Size = UDim2.new(0, 120, 0, 26)
+AntiRagdoll.Font = Enum.Font.SourceSans
+AntiRagdoll.Text = "Anti Ragdoll"
+AntiRagdoll.TextColor3 = Color3.fromRGB(0, 0, 0)
+AntiRagdoll.TextScaled = true
+AntiRagdoll.TextSize = 14.000
+AntiRagdoll.TextWrapped = true
+
+UICorner_6.Parent = AntiRagdoll
+
+WalkSpeedJumpPower.Name = "WalkSpeedJumpPower"
+WalkSpeedJumpPower.Parent = Frame
+WalkSpeedJumpPower.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+WalkSpeedJumpPower.BorderSizePixel = 0
+WalkSpeedJumpPower.Position = UDim2.new(0.155124649, 0, 0.968421161, 0)
+WalkSpeedJumpPower.Size = UDim2.new(0, 245, 0, 89)
+WalkSpeedJumpPower.ZIndex = 0
+
+UICorner_7.Parent = WalkSpeedJumpPower
+
+RemoveTextures.Name = "Remove Textures"
+RemoveTextures.Parent = Frame
+RemoveTextures.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+RemoveTextures.Position = UDim2.new(0.628751397, 0, 0.386172622, 0)
+RemoveTextures.Size = UDim2.new(0, 120, 0, 26)
+RemoveTextures.Font = Enum.Font.SourceSans
+RemoveTextures.Text = "Remove Textures"
+RemoveTextures.TextColor3 = Color3.fromRGB(0, 0, 0)
+RemoveTextures.TextScaled = true
+RemoveTextures.TextSize = 14.000
+RemoveTextures.TextWrapped = true
+
+UICorner_8.Parent = RemoveTextures
+
+Fly.Name = "Fly"
+Fly.Parent = Frame
+Fly.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Fly.BackgroundTransparency = 1.000
+Fly.Position = UDim2.new(0, 0, 0.0631578863, 0)
+Fly.Size = UDim2.new(0, 125, 0, 20)
+Fly.Font = Enum.Font.SourceSans
+Fly.Text = "Fly [Q]"
+Fly.TextColor3 = Color3.fromRGB(0, 0, 0)
+Fly.TextScaled = true
+Fly.TextSize = 14.000
+Fly.TextWrapped = true
+
+HideGUI.Name = "Hide GUI"
+HideGUI.Parent = Frame
+HideGUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HideGUI.BackgroundTransparency = 1.000
+HideGUI.Position = UDim2.new(0, 0, 0.168421045, 0)
+HideGUI.Size = UDim2.new(0, 125, 0, 20)
+HideGUI.Font = Enum.Font.SourceSans
+HideGUI.Text = "Hide GUI [H]"
+HideGUI.TextColor3 = Color3.fromRGB(0, 0, 0)
+HideGUI.TextScaled = true
+HideGUI.TextSize = 14.000
+HideGUI.TextWrapped = true
+
+Rejoin.Name = "Rejoin"
+Rejoin.Parent = Frame
+Rejoin.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Rejoin.Position = UDim2.new(0.628751397, 0, 0.201962113, 0)
+Rejoin.Size = UDim2.new(0, 120, 0, 26)
+Rejoin.Font = Enum.Font.SourceSans
+Rejoin.Text = "Rejoin"
+Rejoin.TextColor3 = Color3.fromRGB(0, 0, 0)
+Rejoin.TextScaled = true
+Rejoin.TextSize = 14.000
+Rejoin.TextWrapped = true
+
+UICorner_9.Parent = Rejoin
+
+Credits.Name = "Credits"
+Credits.Parent = Frame
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 1.000
+Credits.Position = UDim2.new(0.155124649, 0, 1.43684196, 0)
+Credits.Size = UDim2.new(0, 245, 0, 20)
+Credits.Font = Enum.Font.SourceSans
+Credits.Text = "Credits: jakiemarkar"
+Credits.TextColor3 = Color3.fromRGB(0, 0, 0)
+Credits.TextScaled = true
+Credits.TextSize = 14.000
+Credits.TextWrapped = true
+
+Spam.Name = "Spam"
+Spam.Parent = Frame
+Spam.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Spam.Position = UDim2.new(0.182768002, 0, 1.04406726, 0)
+Spam.Size = UDim2.new(0, 224, 0, 26)
+Spam.Font = Enum.Font.SourceSans
+Spam.Text = "Chat Spam Credits"
+Spam.TextColor3 = Color3.fromRGB(0, 0, 0)
+Spam.TextScaled = true
+Spam.TextSize = 14.000
+Spam.TextWrapped = true
+
+UICorner_10.Parent = Spam
+
+StopSpam.Name = "Stop Spam"
+StopSpam.Parent = Frame
+StopSpam.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+StopSpam.Position = UDim2.new(0.182768002, 0, 1.22301459, 0)
+StopSpam.Size = UDim2.new(0, 224, 0, 26)
+StopSpam.Font = Enum.Font.SourceSans
+StopSpam.Text = "Stop Chat Spam"
+StopSpam.TextColor3 = Color3.fromRGB(0, 0, 0)
+StopSpam.TextScaled = true
+StopSpam.TextSize = 14.000
+StopSpam.TextWrapped = true
+
+UICorner_11.Parent = StopSpam
+
+-- Scripts:
+
+local function FFHPX_fake_script() -- Name.Dragable 
+	local script = Instance.new('LocalScript', Name)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(FFHPX_fake_script)()
+local function UJXTKR_fake_script() -- Superpush.LocalScript 
+	local script = Instance.new('LocalScript', Superpush)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local Animation = Instance.new("Animation")
+		Animation.AnimationId = "rbxassetid://1984283994"
+	
+		Instance = Instance.new("Tool", game:GetService("Players").LocalPlayer.Backpack)
+		Instance.RequiresHandle = false
+	
+		Instance.Activated:connect(
+			function()
+				if game:GetService("Players").LocalPlayer.Character:WaitForChild("Humanoid").RigType == Enum.HumanoidRigType.R15 then
+					game:GetService("Players").LocalPlayer.Character:WaitForChild("Humanoid"):LoadAnimation(Animation):Play()
+					for i, v in pairs(game:GetService("Players"):GetDescendants()) do
+						if v:IsA("RemoteEvent") and v.Name == "PushEvent" then
+							v:FireServer()
+						end
+					end
+				else
+					for i, v in pairs(game:GetService("Players"):GetDescendants()) do
+						if v:IsA("RemoteEvent") and v.Name == "PushEvent" then
+							v:FireServer()
+						end
+					end
+				end
+			end
+		)
+	end)
+end
+coroutine.wrap(UJXTKR_fake_script)()
+local function YIJJ_fake_script() -- Name_2.Rainbower 
+	local script = Instance.new('LocalScript', Name_2)
+
+	while wait() do
+		script.Parent.TextColor3 = Color3.new(1,0,0)
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g+(17/255),script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r-(17/255),script.Parent.TextColor3.g,script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g,script.Parent.TextColor3.b+(17/255))
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g-(17/255),script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r+(17/255),script.Parent.TextColor3.g,script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g,script.Parent.TextColor3.b-(17/255))
+		end
+	end
+end
+coroutine.wrap(YIJJ_fake_script)()
+local function ORYGUI_fake_script() -- Invisiblemap.LocalScript 
+	local script = Instance.new('LocalScript', Invisiblemap)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local tool
+		for i,v in pairs (game.Players:GetPlayers()) do
+			tool = v.Backpack:FindFirstChild'OddPotion' or v.Character:FindFirstChild'OddPotion'
+			if tool then break end
+		end
+	
+		for i,v in pairs(workspace.NewerMap:GetDescendants()) do
+			tool.TransEvent:FireServer(v,1)
+		end
+	end)
+end
+coroutine.wrap(ORYGUI_fake_script)()
+local function NZRP_fake_script() -- InvisiblePlayer.LocalScript 
+	local script = Instance.new('LocalScript', InvisiblePlayer)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local tool
+		for i,v in pairs (game.Players:GetPlayers()) do
+			tool = v.Backpack:FindFirstChild'OddPotion' or v.Character:FindFirstChild'OddPotion'
+			if tool then break end
+		end
+	
+		for i,v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+			tool.TransEvent:FireServer(v,1)
+		end
+	end)
+end
+coroutine.wrap(NZRP_fake_script)()
+local function GEGXIAT_fake_script() -- AntiRagdoll.LocalScript 
+	local script = Instance.new('LocalScript', AntiRagdoll)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local down = false
+		local loop = game:GetService('RunService')
+		local ws = game:GetService('Workspace')
+		local players = game:GetService('Players')
+		local player = players.LocalPlayer
+		local mouse = player:GetMouse()
+	
+		loop.Heartbeat:Connect(function()
+			game:GetService("ReplicatedStorage").LocalRagdollEvent:Fire(false)
+			if player.Character:FindFirstChild("Push") then
+				ws[player.Name].Push.Enabled = true
+				ws[player.Name].Push.PushEvent:FireServer()
+			end
+			if player.Character:FindFirstChild("ImpulseGrenade") then
+				ws[player.Name].ImpulseGrenade.Enabled = true
+			end
+		end)
+	
+		mouse.Button1Down:connect(function()
+			down = true
+			mouse.Button1Up:connect(function()
+				down = false
+			end)
+			while wait() do
+				if down and 
+					player.Character:FindFirstChild("ImpulseGrenade") and 
+					player.Character:FindFirstChild("ImpulseGrenade").Enabled == true then
+					player.Character.ImpulseGrenade:Activate()
+				else
+					break
+				end
+			end
+		end)
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "Anti Ragdoll";
+			Text = "You have to execute everytime you die";
+			Icon = "http://www.roblox.com/asset/?id=6558374856";
+			Duration = "7";
+		})
+	end)
+end
+coroutine.wrap(GEGXIAT_fake_script)()
+local function PWBS_fake_script() -- RemoveTextures.LocalScript 
+	local script = Instance.new('LocalScript', RemoveTextures)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for _,v in pairs(workspace:GetDescendants()) do
+			if v.ClassName == "Part"
+				or v.ClassName == "SpawnLocation"
+				or v.ClassName == "WedgePart"
+				or v.ClassName == "Terrain"
+				or v.ClassName == "MeshPart" then
+				v.Material = "Plastic"
+			end
+		end
+		for _,v in pairs(workspace:GetDescendants()) do
+			if v.ClassName == "Decal"
+				or v.ClassName == "Texture" then
+				v:Destroy()
+			end
+		end
+	end)
+end
+coroutine.wrap(PWBS_fake_script)()
+local function SJPR_fake_script() -- Frame.Fly 
+	local script = Instance.new('LocalScript', Frame)
+
+	local Enabled = false
+	local Camera = game.Workspace.CurrentCamera
+	local Player = game:GetService("Players").LocalPlayer
+	local Input = game:GetService("UserInputService")
+	local Forward = false
+	local Back = false
+	local Left = false
+	local Right = false
+	local Up = false
+	local Down = false
+	
+	local function SetPlayer()
+		for i,v in pairs(Player.Character:GetChildren()) do
+			pcall(function()
+				v.Anchored = not v.Anchored
+			end)
+		end
+	end
+	
+	Input.InputBegan:Connect(function(Key,IsChat)
+		if IsChat then return end
+		if Key.KeyCode == Enum.KeyCode.Q then
+			Enabled = not Enabled
+			SetPlayer()
+		end
+		if Key.KeyCode == Enum.KeyCode.W then
+			Forward = true
+		end
+		if Key.KeyCode == Enum.KeyCode.S then
+			Back = true
+		end
+		if Key.KeyCode == Enum.KeyCode.A then
+			Left = true
+		end
+		if Key.KeyCode == Enum.KeyCode.D then
+			Right = true
+		end
+		if Key.KeyCode == Enum.KeyCode.Space then
+			Up = true
+		end
+		if Key.KeyCode == Enum.KeyCode.LeftControl then
+			Down = true
+		end
+	end)
+	
+	Input.InputEnded:Connect(function(Key,IsChat)
+		if IsChat then return end
+		if Key.KeyCode == Enum.KeyCode.W then
+			Forward = false
+		end
+		if Key.KeyCode == Enum.KeyCode.S then
+			Back = false
+		end
+		if Key.KeyCode == Enum.KeyCode.A then
+			Left = false
+		end
+		if Key.KeyCode == Enum.KeyCode.D then
+			Right = false
+		end
+		if Key.KeyCode == Enum.KeyCode.Space then
+			Up = false
+		end
+		if Key.KeyCode == Enum.KeyCode.LeftControl then
+			Down = false
+		end
+	end)
+	
+	while game:GetService("RunService").RenderStepped:Wait() do
+		if Enabled then
+			pcall(function()
+				if Forward then
+					Player.Character:TranslateBy(Camera.CFrame.lookVector*2)
+				end
+				if Back then
+					Player.Character:TranslateBy(-Camera.CFrame.lookVector*2)
+				end
+				if Left then
+					Player.Character:TranslateBy(-Camera.CFrame:vectorToWorldSpace(Vector3.new(1,0,0))*2)
+				end
+				if Right then
+					Player.Character:TranslateBy(Camera.CFrame:vectorToWorldSpace(Vector3.new(1,0,0))*2)
+				end
+				if Up then
+					Player.Character:TranslateBy(Camera.CFrame:vectorToWorldSpace(Vector3.new(0,1,0))*2)
+				end
+				if Down then
+					Player.Character:TranslateBy(-Camera.CFrame:vectorToWorldSpace(Vector3.new(0,1,0))*2)
+				end
+			end)
+		end
+	end
+end
+coroutine.wrap(SJPR_fake_script)()
+local function JWMIDV_fake_script() -- Frame.Hide 
+	local script = Instance.new('LocalScript', Frame)
+
+	function PopupGui()
+		if script.Parent.Visible == true then script.Parent.Visible = false
+			else script.Parent.Visible = true
+		end
+	end
+	
+	game:GetService("UserInputService").InputBegan:Connect(function(key)
+		if key.KeyCode == Enum.KeyCode.H then
+			PopupGui()
+		end
+	end)
+	
+end
+coroutine.wrap(JWMIDV_fake_script)()
+local function UXSWYEZ_fake_script() -- Rejoin.LocalScript 
+	local script = Instance.new('LocalScript', Rejoin)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game:GetService("TeleportService"):Teleport(game.PlaceId, game.Players.LocalPlayer)
+	end)
+end
+coroutine.wrap(UXSWYEZ_fake_script)()
+local function YTSQI_fake_script() -- Spam.LocalScript 
+	local script = Instance.new('LocalScript', Spam)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	function spamed()
+	wait(0.3)
+	local A_1 = "Go Sub To jakiemarkar On Youtube" local A_2 = "All" 
+	local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
+	spamed()
+	end
+	spamed()
+	end)
+end
+coroutine.wrap(YTSQI_fake_script)()
+local function ZPJG_fake_script() -- StopSpam.LocalScript 
+	local script = Instance.new('LocalScript', StopSpam)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.Parent.Spam.LocalScript.Disabled = true
+	wait(0.3)
+	script.Parent.Parent.Spam.LocalScript.Disabled = false
+	end)
+end
+coroutine.wrap(ZPJG_fake_script)()
