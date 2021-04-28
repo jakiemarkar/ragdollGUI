@@ -642,7 +642,7 @@ local function WLKJ_fake_script() -- Frame.Tp
 	
 	mouse.KeyDown:connect(function(key)
 	
-		if key == "q" then
+		if key == "x" then
 	
 			if mouse.Target then
 	
