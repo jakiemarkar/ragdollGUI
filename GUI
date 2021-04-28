@@ -28,6 +28,7 @@ local UICorner_10 = Instance.new("UICorner")
 local StopSpam = Instance.new("TextButton")
 local UICorner_11 = Instance.new("UICorner")
 local Noclip = Instance.new("TextLabel")
+local TP = Instance.new("TextLabel")
 
 --Properties:
 
@@ -240,9 +241,22 @@ Noclip.TextScaled = true
 Noclip.TextSize = 14.000
 Noclip.TextWrapped = true
 
+TP.Name = "TP"
+TP.Parent = Frame
+TP.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TP.BackgroundTransparency = 1.000
+TP.Position = UDim2.new(0, 0, 0.384210497, 0)
+TP.Size = UDim2.new(0, 125, 0, 20)
+TP.Font = Enum.Font.SourceSans
+TP.Text = "TP To Mouse [X]"
+TP.TextColor3 = Color3.fromRGB(0, 0, 0)
+TP.TextScaled = true
+TP.TextSize = 14.000
+TP.TextWrapped = true
+
 -- Scripts:
 
-local function KYMSDCY_fake_script() -- Name.Dragable 
+local function RCUZZQ_fake_script() -- Name.Dragable 
 	local script = Instance.new('LocalScript', Name)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -285,8 +299,8 @@ local function KYMSDCY_fake_script() -- Name.Dragable
 		end
 	end)
 end
-coroutine.wrap(KYMSDCY_fake_script)()
-local function AHQFL_fake_script() -- Superpush.LocalScript 
+coroutine.wrap(RCUZZQ_fake_script)()
+local function CLYEGUL_fake_script() -- Superpush.LocalScript 
 	local script = Instance.new('LocalScript', Superpush)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -316,8 +330,8 @@ local function AHQFL_fake_script() -- Superpush.LocalScript
 		)
 	end)
 end
-coroutine.wrap(AHQFL_fake_script)()
-local function LBLGZ_fake_script() -- Name_2.Rainbower 
+coroutine.wrap(CLYEGUL_fake_script)()
+local function GZWMUT_fake_script() -- Name_2.Rainbower 
 	local script = Instance.new('LocalScript', Name_2)
 
 	while wait() do
@@ -348,8 +362,8 @@ local function LBLGZ_fake_script() -- Name_2.Rainbower
 		end
 	end
 end
-coroutine.wrap(LBLGZ_fake_script)()
-local function SNMTPO_fake_script() -- Invisiblemap.LocalScript 
+coroutine.wrap(GZWMUT_fake_script)()
+local function HDMQRQ_fake_script() -- Invisiblemap.LocalScript 
 	local script = Instance.new('LocalScript', Invisiblemap)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -364,8 +378,8 @@ local function SNMTPO_fake_script() -- Invisiblemap.LocalScript
 		end
 	end)
 end
-coroutine.wrap(SNMTPO_fake_script)()
-local function SKEQWHS_fake_script() -- InvisiblePlayer.LocalScript 
+coroutine.wrap(HDMQRQ_fake_script)()
+local function FOWS_fake_script() -- InvisiblePlayer.LocalScript 
 	local script = Instance.new('LocalScript', InvisiblePlayer)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -380,8 +394,8 @@ local function SKEQWHS_fake_script() -- InvisiblePlayer.LocalScript
 		end
 	end)
 end
-coroutine.wrap(SKEQWHS_fake_script)()
-local function LJOA_fake_script() -- AntiRagdoll.LocalScript 
+coroutine.wrap(FOWS_fake_script)()
+local function GGAHDWB_fake_script() -- AntiRagdoll.LocalScript 
 	local script = Instance.new('LocalScript', AntiRagdoll)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -426,8 +440,8 @@ local function LJOA_fake_script() -- AntiRagdoll.LocalScript
 		})
 	end)
 end
-coroutine.wrap(LJOA_fake_script)()
-local function JLAZ_fake_script() -- RemoveTextures.LocalScript 
+coroutine.wrap(GGAHDWB_fake_script)()
+local function NNHRCAO_fake_script() -- RemoveTextures.LocalScript 
 	local script = Instance.new('LocalScript', RemoveTextures)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -448,8 +462,8 @@ local function JLAZ_fake_script() -- RemoveTextures.LocalScript
 		end
 	end)
 end
-coroutine.wrap(JLAZ_fake_script)()
-local function LSQPMSL_fake_script() -- Frame.Fly 
+coroutine.wrap(NNHRCAO_fake_script)()
+local function MTWIF_fake_script() -- Frame.Fly 
 	local script = Instance.new('LocalScript', Frame)
 
 	local Enabled = false
@@ -544,8 +558,8 @@ local function LSQPMSL_fake_script() -- Frame.Fly
 		end
 	end
 end
-coroutine.wrap(LSQPMSL_fake_script)()
-local function XBXM_fake_script() -- Frame.Hide 
+coroutine.wrap(MTWIF_fake_script)()
+local function IYLKZQY_fake_script() -- Frame.Hide 
 	local script = Instance.new('LocalScript', Frame)
 
 	function PopupGui()
@@ -561,16 +575,16 @@ local function XBXM_fake_script() -- Frame.Hide
 	end)
 	
 end
-coroutine.wrap(XBXM_fake_script)()
-local function JHJL_fake_script() -- Rejoin.LocalScript 
+coroutine.wrap(IYLKZQY_fake_script)()
+local function RCSL_fake_script() -- Rejoin.LocalScript 
 	local script = Instance.new('LocalScript', Rejoin)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("TeleportService"):Teleport(game.PlaceId, game.Players.LocalPlayer)
 	end)
 end
-coroutine.wrap(JHJL_fake_script)()
-local function NWVZFQN_fake_script() -- Spam.LocalScript 
+coroutine.wrap(RCSL_fake_script)()
+local function NTAEA_fake_script() -- Spam.LocalScript 
 	local script = Instance.new('LocalScript', Spam)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -583,8 +597,8 @@ local function NWVZFQN_fake_script() -- Spam.LocalScript
 	spamed()
 	end)
 end
-coroutine.wrap(NWVZFQN_fake_script)()
-local function GQCH_fake_script() -- StopSpam.LocalScript 
+coroutine.wrap(NTAEA_fake_script)()
+local function HQPTUAU_fake_script() -- StopSpam.LocalScript 
 	local script = Instance.new('LocalScript', StopSpam)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -593,8 +607,8 @@ local function GQCH_fake_script() -- StopSpam.LocalScript
 	script.Parent.Parent.Spam.LocalScript.Disabled = false
 	end)
 end
-coroutine.wrap(GQCH_fake_script)()
-local function WVNDYM_fake_script() -- Frame.Noclip 
+coroutine.wrap(HQPTUAU_fake_script)()
+local function RUSYM_fake_script() -- Frame.Noclip 
 	local script = Instance.new('LocalScript', Frame)
 
 	noclip = false
@@ -614,4 +628,29 @@ local function WVNDYM_fake_script() -- Frame.Noclip
 	end)
 	
 end
-coroutine.wrap(WVNDYM_fake_script)()
+coroutine.wrap(RUSYM_fake_script)()
+local function WLKJ_fake_script() -- Frame.Tp 
+	local script = Instance.new('LocalScript', Frame)
+
+	plr = game.Players.LocalPlayer
+	
+	hum = plr.Character.HumanoidRootPart
+	
+	mouse = plr:GetMouse()
+	
+	
+	
+	mouse.KeyDown:connect(function(key)
+	
+		if key == "q" then
+	
+			if mouse.Target then
+	
+				hum.CFrame = CFrame.new(mouse.Hit.x, mouse.Hit.y + 5, mouse.Hit.z)
+	
+			end
+	
+		end
+	end)
+end
+coroutine.wrap(WLKJ_fake_script)()
