@@ -28,8 +28,6 @@ local UICorner_10 = Instance.new("UICorner")
 local StopSpam = Instance.new("TextButton")
 local UICorner_11 = Instance.new("UICorner")
 local Noclip = Instance.new("TextLabel")
-local FreeBomb = Instance.new("TextButton")
-local UICorner_12 = Instance.new("UICorner")
 
 --Properties:
 
@@ -242,23 +240,9 @@ Noclip.TextScaled = true
 Noclip.TextSize = 14.000
 Noclip.TextWrapped = true
 
-FreeBomb.Name = "Free Bomb"
-FreeBomb.Parent = Frame
-FreeBomb.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-FreeBomb.Position = UDim2.new(0.0608843565, 0, 0.386172652, 0)
-FreeBomb.Size = UDim2.new(0, 120, 0, 26)
-FreeBomb.Font = Enum.Font.SourceSans
-FreeBomb.Text = "Free Bomb"
-FreeBomb.TextColor3 = Color3.fromRGB(0, 0, 0)
-FreeBomb.TextScaled = true
-FreeBomb.TextSize = 14.000
-FreeBomb.TextWrapped = true
-
-UICorner_12.Parent = FreeBomb
-
 -- Scripts:
 
-local function FYBCR_fake_script() -- Name.Dragable 
+local function KYMSDCY_fake_script() -- Name.Dragable 
 	local script = Instance.new('LocalScript', Name)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -301,8 +285,8 @@ local function FYBCR_fake_script() -- Name.Dragable
 		end
 	end)
 end
-coroutine.wrap(FYBCR_fake_script)()
-local function ZYDWI_fake_script() -- Superpush.LocalScript 
+coroutine.wrap(KYMSDCY_fake_script)()
+local function AHQFL_fake_script() -- Superpush.LocalScript 
 	local script = Instance.new('LocalScript', Superpush)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -332,8 +316,8 @@ local function ZYDWI_fake_script() -- Superpush.LocalScript
 		)
 	end)
 end
-coroutine.wrap(ZYDWI_fake_script)()
-local function HGMA_fake_script() -- Name_2.Rainbower 
+coroutine.wrap(AHQFL_fake_script)()
+local function LBLGZ_fake_script() -- Name_2.Rainbower 
 	local script = Instance.new('LocalScript', Name_2)
 
 	while wait() do
@@ -364,8 +348,8 @@ local function HGMA_fake_script() -- Name_2.Rainbower
 		end
 	end
 end
-coroutine.wrap(HGMA_fake_script)()
-local function GDVUJMI_fake_script() -- Invisiblemap.LocalScript 
+coroutine.wrap(LBLGZ_fake_script)()
+local function SNMTPO_fake_script() -- Invisiblemap.LocalScript 
 	local script = Instance.new('LocalScript', Invisiblemap)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -380,8 +364,8 @@ local function GDVUJMI_fake_script() -- Invisiblemap.LocalScript
 		end
 	end)
 end
-coroutine.wrap(GDVUJMI_fake_script)()
-local function JFBIMZ_fake_script() -- InvisiblePlayer.LocalScript 
+coroutine.wrap(SNMTPO_fake_script)()
+local function SKEQWHS_fake_script() -- InvisiblePlayer.LocalScript 
 	local script = Instance.new('LocalScript', InvisiblePlayer)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -396,8 +380,8 @@ local function JFBIMZ_fake_script() -- InvisiblePlayer.LocalScript
 		end
 	end)
 end
-coroutine.wrap(JFBIMZ_fake_script)()
-local function PTTZ_fake_script() -- AntiRagdoll.LocalScript 
+coroutine.wrap(SKEQWHS_fake_script)()
+local function LJOA_fake_script() -- AntiRagdoll.LocalScript 
 	local script = Instance.new('LocalScript', AntiRagdoll)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -442,8 +426,8 @@ local function PTTZ_fake_script() -- AntiRagdoll.LocalScript
 		})
 	end)
 end
-coroutine.wrap(PTTZ_fake_script)()
-local function ZAPBARC_fake_script() -- RemoveTextures.LocalScript 
+coroutine.wrap(LJOA_fake_script)()
+local function JLAZ_fake_script() -- RemoveTextures.LocalScript 
 	local script = Instance.new('LocalScript', RemoveTextures)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -464,9 +448,104 @@ local function ZAPBARC_fake_script() -- RemoveTextures.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ZAPBARC_fake_script)()
--- Frame.Fly is disabled.
-local function SCZSM_fake_script() -- Frame.Hide 
+coroutine.wrap(JLAZ_fake_script)()
+local function LSQPMSL_fake_script() -- Frame.Fly 
+	local script = Instance.new('LocalScript', Frame)
+
+	local Enabled = false
+	local Camera = game.Workspace.CurrentCamera
+	local Player = game:GetService("Players").LocalPlayer
+	local Input = game:GetService("UserInputService")
+	local Forward = false
+	local Back = false
+	local Left = false
+	local Right = false
+	local Up = false
+	local Down = false
+	
+	local function SetPlayer()
+		for i,v in pairs(Player.Character:GetChildren()) do
+			pcall(function()
+				v.Anchored = not v.Anchored
+			end)
+		end
+	end
+	
+	Input.InputBegan:Connect(function(Key,IsChat)
+		if IsChat then return end
+		if Key.KeyCode == Enum.KeyCode.Q then
+			Enabled = not Enabled
+			SetPlayer()
+		end
+		if Key.KeyCode == Enum.KeyCode.W then
+			Forward = true
+		end
+		if Key.KeyCode == Enum.KeyCode.S then
+			Back = true
+		end
+		if Key.KeyCode == Enum.KeyCode.A then
+			Left = true
+		end
+		if Key.KeyCode == Enum.KeyCode.D then
+			Right = true
+		end
+		if Key.KeyCode == Enum.KeyCode.Space then
+			Up = true
+		end
+		if Key.KeyCode == Enum.KeyCode.LeftControl then
+			Down = true
+		end
+	end)
+	
+	Input.InputEnded:Connect(function(Key,IsChat)
+		if IsChat then return end
+		if Key.KeyCode == Enum.KeyCode.W then
+			Forward = false
+		end
+		if Key.KeyCode == Enum.KeyCode.S then
+			Back = false
+		end
+		if Key.KeyCode == Enum.KeyCode.A then
+			Left = false
+		end
+		if Key.KeyCode == Enum.KeyCode.D then
+			Right = false
+		end
+		if Key.KeyCode == Enum.KeyCode.Space then
+			Up = false
+		end
+		if Key.KeyCode == Enum.KeyCode.LeftControl then
+			Down = false
+		end
+	end)
+	
+	while game:GetService("RunService").RenderStepped:Wait() do
+		if Enabled then
+			pcall(function()
+				if Forward then
+					Player.Character:TranslateBy(Camera.CFrame.lookVector*2)
+				end
+				if Back then
+					Player.Character:TranslateBy(-Camera.CFrame.lookVector*2)
+				end
+				if Left then
+					Player.Character:TranslateBy(-Camera.CFrame:vectorToWorldSpace(Vector3.new(1,0,0))*2)
+				end
+				if Right then
+					Player.Character:TranslateBy(Camera.CFrame:vectorToWorldSpace(Vector3.new(1,0,0))*2)
+				end
+				if Up then
+					Player.Character:TranslateBy(Camera.CFrame:vectorToWorldSpace(Vector3.new(0,1,0))*2)
+				end
+				if Down then
+					Player.Character:TranslateBy(-Camera.CFrame:vectorToWorldSpace(Vector3.new(0,1,0))*2)
+				end
+			end)
+		end
+	end
+end
+coroutine.wrap(LSQPMSL_fake_script)()
+local function XBXM_fake_script() -- Frame.Hide 
 	local script = Instance.new('LocalScript', Frame)
 
 	function PopupGui()
@@ -482,16 +561,16 @@ local function SCZSM_fake_script() -- Frame.Hide
 	end)
 	
 end
-coroutine.wrap(SCZSM_fake_script)()
-local function ZNWEWFG_fake_script() -- Rejoin.LocalScript 
+coroutine.wrap(XBXM_fake_script)()
+local function JHJL_fake_script() -- Rejoin.LocalScript 
 	local script = Instance.new('LocalScript', Rejoin)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("TeleportService"):Teleport(game.PlaceId, game.Players.LocalPlayer)
 	end)
 end
-coroutine.wrap(ZNWEWFG_fake_script)()
-local function BCAHU_fake_script() -- Spam.LocalScript 
+coroutine.wrap(JHJL_fake_script)()
+local function NWVZFQN_fake_script() -- Spam.LocalScript 
 	local script = Instance.new('LocalScript', Spam)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -504,8 +583,8 @@ local function BCAHU_fake_script() -- Spam.LocalScript
 	spamed()
 	end)
 end
-coroutine.wrap(BCAHU_fake_script)()
-local function RGAU_fake_script() -- StopSpam.LocalScript 
+coroutine.wrap(NWVZFQN_fake_script)()
+local function GQCH_fake_script() -- StopSpam.LocalScript 
 	local script = Instance.new('LocalScript', StopSpam)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -514,122 +593,8 @@ local function RGAU_fake_script() -- StopSpam.LocalScript
 	script.Parent.Parent.Spam.LocalScript.Disabled = false
 	end)
 end
-coroutine.wrap(RGAU_fake_script)()
-local function YNIL_fake_script() -- Frame.Fly 2 
-	local script = Instance.new('LocalScript', Frame)
-
-	local plr = game.Players.LocalPlayer
-	local mouse = plr:GetMouse()
-	
-	localplayer = plr
-	
-	if workspace:FindFirstChild("Core") then
-		workspace.Core:Destroy()
-	end
-	
-	local Core = Instance.new("Part")
-	Core.Name = "Core"
-	Core.Size = Vector3.new(0.05, 0.05, 0.05)
-	
-	spawn(function()
-		Core.Parent = workspace
-		local Weld = Instance.new("Weld", Core)
-		Weld.Part0 = Core
-		Weld.Part1 = localplayer.Character.LowerTorso
-		Weld.C0 = CFrame.new(0, 0, 0)
-	end)
-	
-	workspace:WaitForChild("Core")
-	
-	local torso = workspace.Core
-	flying = false
-	local speed=10
-	local keys={a=false,d=false,w=false,s=false}
-	local e1
-	local e2
-	local function start()
-		local pos = Instance.new("BodyPosition",torso)
-		local gyro = Instance.new("BodyGyro",torso)
-		pos.Name="EPIXPOS"
-		pos.maxForce = Vector3.new(math.huge, math.huge, math.huge)
-		pos.position = torso.Position
-		gyro.maxTorque = Vector3.new(9e9, 9e9, 9e9)
-		gyro.cframe = torso.CFrame
-		repeat
-			wait()
-			localplayer.Character.Humanoid.PlatformStand=true
-			local new=gyro.cframe - gyro.cframe.p + pos.position
-			if not keys.w and not keys.s and not keys.a and not keys.d then
-				speed=5
-			end
-			if keys.w then
-				new = new + workspace.CurrentCamera.CoordinateFrame.lookVector * speed
-				speed=speed+0
-			end
-			if keys.s then
-				new = new - workspace.CurrentCamera.CoordinateFrame.lookVector * speed
-				speed=speed+0
-			end
-			if keys.d then
-				new = new * CFrame.new(speed,0,0)
-				speed=speed+0
-			end
-			if keys.a then
-				new = new * CFrame.new(-speed,0,0)
-				speed=speed+0
-			end
-			if speed>10 then
-				speed=5
-			end
-			pos.position=new.p
-			if keys.w then
-				gyro.cframe = workspace.CurrentCamera.CoordinateFrame*CFrame.Angles(-math.rad(speed*0),0,0)
-			elseif keys.s then
-				gyro.cframe = workspace.CurrentCamera.CoordinateFrame*CFrame.Angles(math.rad(speed*0),0,0)
-			else
-				gyro.cframe = workspace.CurrentCamera.CoordinateFrame
-			end
-		until flying == false
-		if gyro then gyro:Destroy() end
-		if pos then pos:Destroy() end
-		flying=false
-		localplayer.Character.Humanoid.PlatformStand=false
-		speed=10
-	end
-	e1=mouse.KeyDown:connect(function(key)
-		if not torso or not torso.Parent then flying=false e1:disconnect() e2:disconnect() return end
-		if key=="w" then
-			keys.w=true
-		elseif key=="s" then
-			keys.s=true
-		elseif key=="a" then
-			keys.a=true
-		elseif key=="d" then
-			keys.d=true
-		elseif key=="q" then
-			if flying==true then
-				flying=false
-			else
-				flying=true
-				start()
-			end
-		end
-	end)
-	e2=mouse.KeyUp:connect(function(key)
-		if key=="w" then
-			keys.w=false
-		elseif key=="s" then
-			keys.s=false
-		elseif key=="a" then
-			keys.a=false
-		elseif key=="d" then
-			keys.d=false
-		end
-	end)
-	start()
-end
-coroutine.wrap(YNIL_fake_script)()
-local function TKLMOS_fake_script() -- Frame.Noclip 
+coroutine.wrap(GQCH_fake_script)()
+local function WVNDYM_fake_script() -- Frame.Noclip 
 	local script = Instance.new('LocalScript', Frame)
 
 	noclip = false
@@ -649,27 +614,4 @@ local function TKLMOS_fake_script() -- Frame.Noclip
 	end)
 	
 end
-coroutine.wrap(TKLMOS_fake_script)()
-local function RVFT_fake_script() -- FreeBomb.LocalScript 
-	local script = Instance.new('LocalScript', FreeBomb)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		local players = game.Players:GetChildren()
-	
-		local selected = players[math.random(1,#players)]
-	
-		local value = nil
-	
-		print(selected)
-	
-	
-		if not selected.Backpack:FindFirstChild("ImpulseGrenade") then
-			print("nil")
-		else
-			selected.Backpack.ImpulseGrenade.Parent = game.Players.LocalPlayer.Backpack
-			value = true 
-	
-		end
-	end)
-end
-coroutine.wrap(RVFT_fake_script)()
+coroutine.wrap(WVNDYM_fake_script)()
